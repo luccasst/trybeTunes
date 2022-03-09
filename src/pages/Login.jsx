@@ -37,16 +37,17 @@ class Login extends React.Component {
     const { name, isDisabled, requestReceived, loading } = this.state;
     return (
       <div data-testid="page-login">
-        { loading ? (<h3>Carregando...</h3>) : (
+        { loading ? (<h2>Carregando...</h2>) : (
           <form>
             <label htmlFor="name-input">
               <input
+                className="inputName"
                 placeholder="Digite seu nome"
                 name="name"
                 data-testid="login-name-input"
                 type="text"
                 value={ name }
-                onChange={ (e) => this.handleEvent(e) }
+                onChange={ this.handleEvent }
               />
             </label>
             <button
