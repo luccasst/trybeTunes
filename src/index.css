@@ -10,6 +10,11 @@ background-color: rgb(153, 224, 94);
 font-size: 2rem;
 }
 .inputButton {
-  margin: 60px;
-  
+  margin: 50px;
+  padding: 5px;
+  width: 10%;
+}
+.Button {
+  width: 5%;
+  outline: none;
 }
