@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
-import Music from './Music';
+import Music from './MusicCard';
 import getMusics from '../services/musicsAPI';
 
 class Album extends React.Component {
@@ -19,11 +19,10 @@ class Album extends React.Component {
 
   getMusicAlbum = async () => {
     const { match: { params: { id } } } = this.props;
-    const musics = await getMusics(id);
-    const song = musics.filter((track) => track.trackId);
-    console.log(song);
+    const musicsSong = await getMusics(id);
+    const song = musicsSong.filter((track) => track.trackId);
     this.setState({
-      musicTrack: musics,
+      musicTrack: musicsSong,
       musics: song,
     });
   }
