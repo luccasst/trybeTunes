@@ -1,13 +1,15 @@
 .trybeTunesh1 {
   background-color: rgb(109, 179, 109);
+  padding: 20px;
 }
 .trybeTunes {
 text-align: center  ;
-padding: 20px;
-margin: 100px;
-flex-wrap: wrap;
+height: 100vh;
+padding: 15px;
 background-color: rgb(153, 224, 94);
 font-size: 2rem;
+flex-direction: column;
+
 }
 .inputButton {
   margin: 50px;
